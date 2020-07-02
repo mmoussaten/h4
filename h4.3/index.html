@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <title>Slide Holder</title>
+    <style>
+        #slideholder {
+            height:400px;
+            width: 1100px;
+            border: 1px black solid;
+        }
+    </style>
+
+</head>
+<body>
+<h2>Crook-App </h2>
+<div id="slideholder"></div>
+<script>
+    var plaatjes = [1,2,3];
+    var teller = 0;
+    var slideholder = document.getElementById("slideholder");
+    slideholder.style.backgroundImage = "url('img1/voorhoofd1.jpg')";
+
+    slideholder.addEventListener("click", function () {
+        slideholder.style.backgroundImage = "url('img1/voorhoofd" + getface() + ".jpg')";
+    });
+    function getface() {
+        if (teller>= plaatjes.length){
+            teller = 1;
+        } else {
+            teller ++;
+        }
+        console.log(teller);
+        return teller;
+    }
+</script>
+<style>
+#middenstuk{
+height:400px;
+width: 1100px;
+border: 1px black solid;
+}
+</style>
+<div id="middenstuk"></div>
+<script>
+    var plaatjes = [1,2,3];
+    var teller = 0;
+    var midden = document.getElementById("middenstuk");
+    midden.style.backgroundImage = "url('img2/midden1.jpg')";
+
+    midden.addEventListener("click", function () {
+        midden.style.backgroundImage = "url('img2/midden" + getface() + ".jpg')";
+    });
+    function getface() {
+        if (teller>= plaatjes.length){
+            teller = 1;
+        } else {
+            teller ++;
+        }
+        console.log(teller);
+        return teller;
+    }
+</script>
+<div id="kaak"></div>
+<style>
+    #kaak{
+        height:400px;
+        width: 1100px;
+        border: 1px black solid;
+    }
+</style>
+<script>
+    var plaatjes = [1,2,3];
+    var teller = 0;
+    var kaaak = document.getElementById("kaak");
+    kaaak.style.backgroundImage = "url('img3/kaak1.jpg')";
+
+        kaaak.addEventListener("click", function () {
+        kaaak.style.backgroundImage = "url('img3/kaak" + getface() + ".jpg')";
+    });
+    function getface() {
+        if (teller>= plaatjes.length){
+            teller = 1;
+        } else {
+            teller ++;
+        }
+        console.log(teller);
+        return teller;
+    }
+</script>
+</body>
+</html>
