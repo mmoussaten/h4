@@ -11,14 +11,27 @@
             border: 1px black solid;
         }
     </style>
-
+    <style>
+        #middenstuk{
+            height:400px;
+            width: 1100px;
+            border: 1px black solid;
+        }
+    </style>
+    <style>
+        #kaak{
+            height:400px;
+            width: 1100px;
+            border: 1px black solid;
+        }
+    </style>
 </head>
 <body>
 <h2>Crook-App </h2>
 <div id="slideholder"></div>
 <script>
     var plaatjes = [1,2,3];
-    var teller = 0;
+    var teller = 1;
     var slideholder = document.getElementById("slideholder");
     slideholder.style.backgroundImage = "url('img1/voorhoofd1.jpg')";
 
@@ -35,17 +48,11 @@
         return teller;
     }
 </script>
-<style>
-#middenstuk{
-height:400px;
-width: 1100px;
-border: 1px black solid;
-}
-</style>
+
 <div id="middenstuk"></div>
 <script>
     var plaatjes = [1,2,3];
-    var teller = 0;
+    var teller = 1;
     var midden = document.getElementById("middenstuk");
     midden.style.backgroundImage = "url('img2/midden1.jpg')";
 
@@ -63,16 +70,10 @@ border: 1px black solid;
     }
 </script>
 <div id="kaak"></div>
-<style>
-    #kaak{
-        height:400px;
-        width: 1100px;
-        border: 1px black solid;
-    }
-</style>
+
 <script>
     var plaatjes = [1,2,3];
-    var teller = 0;
+    var teller = 1;
     var kaaak = document.getElementById("kaak");
     kaaak.style.backgroundImage = "url('img3/kaak1.jpg')";
 
